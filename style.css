@@ -1,0 +1,180 @@
+:root{
+    --main-color:#5b81ba;
+    --gray-color:#F2F5F8;
+}
+body{
+     background-color: var(--main-color);
+     font-family: 'Poppins', sans-serif;
+
+}
+nav .container {
+    background-color: var(--gray-color);
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important
+}
+nav{
+     padding: 0 !important;
+}
+
+#main{
+    background-color: var(--gray-color);
+}
+.posts{
+    padding-top: 2rem;
+}
+.post{
+    margin: 1rem 0;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.card-body img{
+    width: 100%;
+}
+.card-body h6{
+    color: #959393;
+}
+.tags{
+    margin-left: 20px;
+}
+.tag{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+#show-alert{
+    position: fixed;
+    bottom:0px;
+    right: 10px;
+}
+
+#add-post{
+    position: fixed;
+    bottom: 200px;
+    right: 40px;
+    background-color: var(--gray-color);
+    color: var(--main-color);
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+.right{
+    display: none  !important;
+}
+.post{
+    cursor: pointer;
+}
+.stats{
+    font-size: 20px;
+    color: #959393;
+
+}
+.stats span{
+    font-size: 50px;
+    color: #5b81ba;
+    margin-right: 5px;
+}
+.user-post-header{
+    color: #F2F5F8;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+/* CSS LOADER */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background:#333;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 .6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 .6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 .6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 .6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  .loader{
+    position: fixed;
+    left: 48%;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(50%);
+  
+  }
+@media (max-width:992px) {
+    #profileIcon{
+      justify-content: space-between !important; 
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    #registration button{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #add-post{
+        right: 25px;
+        width: 30px;
+        height: 30px;
+    }
+    
+}
