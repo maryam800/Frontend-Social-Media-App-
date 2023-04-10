@@ -1,6 +1,9 @@
 # Frontend-Social-Media-App-
 Language :HTML -CSS-Javascript
 
+![alt text](https://i.imgur.com/UO1UAJ2.png)
+
+
 Registration Process
 ![alt text](https://i.imgur.com/UO1UAJ2.png)
 
